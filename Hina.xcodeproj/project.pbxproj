@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		751F0E7F2422AEC2005730D1 /* KeystoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F0E7E2422AEC2005730D1 /* KeystoreViewController.swift */; };
+		751F0E812422C4BC005730D1 /* Keystore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F0E802422C4BB005730D1 /* Keystore.swift */; };
+		751F0E8324233E57005730D1 /* GlobalStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751F0E8224233E57005730D1 /* GlobalStates.swift */; };
+		754BBAD2242344960036DD75 /* SelectKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754BBAD1242344960036DD75 /* SelectKeyViewController.swift */; };
+		758A9EB524220A1900C05E64 /* HinaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758A9EB424220A1900C05E64 /* HinaViewController.swift */; };
+		759A7ED02421B5E000DAB43A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759A7ECF2421B5E000DAB43A /* AppDelegate.swift */; };
+		759A7ED22421B5E000DAB43A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759A7ED12421B5E000DAB43A /* SceneDelegate.swift */; };
+		759A7ED72421B5E000DAB43A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759A7ED52421B5E000DAB43A /* Main.storyboard */; };
+		759A7ED92421B5E100DAB43A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759A7ED82421B5E100DAB43A /* Assets.xcassets */; };
+		759A7EDC2421B5E100DAB43A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759A7EDA2421B5E100DAB43A /* LaunchScreen.storyboard */; };
+		759C50EC2424097F00E7CB95 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 759C50EB2424097F00E7CB95 /* libsodium.a */; };
+		759C50FA242409F300E7CB95 /* slice2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759C50F1242409F300E7CB95 /* slice2d.cpp */; };
+		759C50FB242409F300E7CB95 /* prng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759C50F2242409F300E7CB95 /* prng.cpp */; };
+		759C50FC242409F300E7CB95 /* crypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759C50F3242409F300E7CB95 /* crypto.cpp */; };
+		759C50FD242409F300E7CB95 /* hina_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759C50F4242409F300E7CB95 /* hina_impl.cpp */; };
+		759C50FE242409F300E7CB95 /* hina.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 759C50F5242409F300E7CB95 /* hina.cpp */; };
+		759C510124240A5600E7CB95 /* sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = 759C50E82424097300E7CB95 /* sodium.h */; };
+		759C510324243B1100E7CB95 /* FixOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C510224243B1100E7CB95 /* FixOrientation.swift */; };
+		75A484222439947A00D837B3 /* ScaleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A484212439947A00D837B3 /* ScaleImage.swift */; };
+		75A4842424399CC300D837B3 /* ScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A4842324399CC300D837B3 /* ScaleViewController.swift */; };
+		75C057C22423EFF600C1FE8D /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C057C12423EFF600C1FE8D /* PreviewViewController.swift */; };
+		75C057C42423F64200C1FE8D /* HinaWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C057C32423F64200C1FE8D /* HinaWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		751F0E7E2422AEC2005730D1 /* KeystoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreViewController.swift; sourceTree = "<group>"; };
+		751F0E802422C4BB005730D1 /* Keystore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keystore.swift; sourceTree = "<group>"; };
+		751F0E8224233E57005730D1 /* GlobalStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalStates.swift; sourceTree = "<group>"; };
+		754BBAD1242344960036DD75 /* SelectKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectKeyViewController.swift; sourceTree = "<group>"; };
+		758A9EB424220A1900C05E64 /* HinaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinaViewController.swift; sourceTree = "<group>"; };
+		759A7ECC2421B5E000DAB43A /* Hina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		759A7ECF2421B5E000DAB43A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		759A7ED12421B5E000DAB43A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		759A7ED62421B5E000DAB43A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		759A7ED82421B5E100DAB43A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		759A7EDB2421B5E100DAB43A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		759A7EDD2421B5E100DAB43A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		759C50E82424097300E7CB95 /* sodium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sodium.h; path = libsodium/include/sodium.h; sourceTree = "<group>"; };
+		759C50E92424097300E7CB95 /* sodium */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sodium; path = libsodium/include/sodium; sourceTree = "<group>"; };
+		759C50EB2424097F00E7CB95 /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsodium.a; path = libsodium/lib/libsodium.a; sourceTree = "<group>"; };
+		759C50EF242409F200E7CB95 /* Hina-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hina-Bridging-Header.h"; sourceTree = "<group>"; };
+		759C50F0242409F300E7CB95 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = prng.h; path = libhina/src/prng.h; sourceTree = "<group>"; };
+		759C50F1242409F300E7CB95 /* slice2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = slice2d.cpp; path = libhina/src/slice2d.cpp; sourceTree = "<group>"; };
+		759C50F2242409F300E7CB95 /* prng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = prng.cpp; path = libhina/src/prng.cpp; sourceTree = "<group>"; };
+		759C50F3242409F300E7CB95 /* crypto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = crypto.cpp; path = libhina/src/crypto.cpp; sourceTree = "<group>"; };
+		759C50F4242409F300E7CB95 /* hina_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hina_impl.cpp; path = libhina/src/hina_impl.cpp; sourceTree = "<group>"; };
+		759C50F5242409F300E7CB95 /* hina.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hina.cpp; path = libhina/src/hina.cpp; sourceTree = "<group>"; };
+		759C50F6242409F300E7CB95 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = libhina/src/crypto.h; sourceTree = "<group>"; };
+		759C50F7242409F300E7CB95 /* slice2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = slice2d.h; path = libhina/src/slice2d.h; sourceTree = "<group>"; };
+		759C50F8242409F300E7CB95 /* hina_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hina_impl.h; path = libhina/src/hina_impl.h; sourceTree = "<group>"; };
+		759C50F9242409F300E7CB95 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = types.h; path = libhina/src/types.h; sourceTree = "<group>"; };
+		759C50FF24240A0200E7CB95 /* hina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hina.h; path = libhina/include/hina.h; sourceTree = "<group>"; };
+		759C510224243B1100E7CB95 /* FixOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixOrientation.swift; sourceTree = "<group>"; };
+		75A484212439947A00D837B3 /* ScaleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleImage.swift; sourceTree = "<group>"; };
+		75A4842324399CC300D837B3 /* ScaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewController.swift; sourceTree = "<group>"; };
+		75C057C12423EFF600C1FE8D /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		75C057C32423F64200C1FE8D /* HinaWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HinaWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		759A7EC92421B5E000DAB43A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759C50EC2424097F00E7CB95 /* libsodium.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		759A7EC32421B5E000DAB43A = {
+			isa = PBXGroup;
+			children = (
+				759A7ECE2421B5E000DAB43A /* Hina */,
+				759A7ECD2421B5E000DAB43A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		759A7ECD2421B5E000DAB43A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				759A7ECC2421B5E000DAB43A /* Hina.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		759A7ECE2421B5E000DAB43A /* Hina */ = {
+			isa = PBXGroup;
+			children = (
+				759A7ECF2421B5E000DAB43A /* AppDelegate.swift */,
+				759A7ED12421B5E000DAB43A /* SceneDelegate.swift */,
+				759A7ED52421B5E000DAB43A /* Main.storyboard */,
+				758A9EB424220A1900C05E64 /* HinaViewController.swift */,
+				751F0E7E2422AEC2005730D1 /* KeystoreViewController.swift */,
+				754BBAD1242344960036DD75 /* SelectKeyViewController.swift */,
+				75A4842324399CC300D837B3 /* ScaleViewController.swift */,
+				75C057C12423EFF600C1FE8D /* PreviewViewController.swift */,
+				759C510224243B1100E7CB95 /* FixOrientation.swift */,
+				75A484212439947A00D837B3 /* ScaleImage.swift */,
+				751F0E802422C4BB005730D1 /* Keystore.swift */,
+				751F0E8224233E57005730D1 /* GlobalStates.swift */,
+				75C057C32423F64200C1FE8D /* HinaWrapper.swift */,
+				759A7ED82421B5E100DAB43A /* Assets.xcassets */,
+				759A7EDA2421B5E100DAB43A /* LaunchScreen.storyboard */,
+				759A7EDD2421B5E100DAB43A /* Info.plist */,
+				759C50E7242408F200E7CB95 /* libsodium */,
+				759C50EE242409AD00E7CB95 /* libhina */,
+			);
+			path = Hina;
+			sourceTree = "<group>";
+		};
+		759C50E7242408F200E7CB95 /* libsodium */ = {
+			isa = PBXGroup;
+			children = (
+				759C50E92424097300E7CB95 /* sodium */,
+				759C50E82424097300E7CB95 /* sodium.h */,
+				759C50EB2424097F00E7CB95 /* libsodium.a */,
+			);
+			name = libsodium;
+			sourceTree = "<group>";
+		};
+		759C50EE242409AD00E7CB95 /* libhina */ = {
+			isa = PBXGroup;
+			children = (
+				759C50F3242409F300E7CB95 /* crypto.cpp */,
+				759C50F6242409F300E7CB95 /* crypto.h */,
+				759C50F4242409F300E7CB95 /* hina_impl.cpp */,
+				759C50F8242409F300E7CB95 /* hina_impl.h */,
+				759C50F5242409F300E7CB95 /* hina.cpp */,
+				759C50FF24240A0200E7CB95 /* hina.h */,
+				759C50F2242409F300E7CB95 /* prng.cpp */,
+				759C50F0242409F300E7CB95 /* prng.h */,
+				759C50F1242409F300E7CB95 /* slice2d.cpp */,
+				759C50F7242409F300E7CB95 /* slice2d.h */,
+				759C50F9242409F300E7CB95 /* types.h */,
+				759C50EF242409F200E7CB95 /* Hina-Bridging-Header.h */,
+			);
+			name = libhina;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		759C510024240A4F00E7CB95 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759C510124240A5600E7CB95 /* sodium.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		759A7ECB2421B5E000DAB43A /* Hina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 759A7EE02421B5E100DAB43A /* Build configuration list for PBXNativeTarget "Hina" */;
+			buildPhases = (
+				759C510024240A4F00E7CB95 /* Headers */,
+				759A7EC82421B5E000DAB43A /* Sources */,
+				759A7EC92421B5E000DAB43A /* Frameworks */,
+				759A7ECA2421B5E000DAB43A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hina;
+			productName = Hina;
+			productReference = 759A7ECC2421B5E000DAB43A /* Hina.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		759A7EC42421B5E000DAB43A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "XCF-Babble";
+				TargetAttributes = {
+					759A7ECB2421B5E000DAB43A = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 759A7EC72421B5E000DAB43A /* Build configuration list for PBXProject "Hina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 759A7EC32421B5E000DAB43A;
+			productRefGroup = 759A7ECD2421B5E000DAB43A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				759A7ECB2421B5E000DAB43A /* Hina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		759A7ECA2421B5E000DAB43A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				759A7EDC2421B5E100DAB43A /* LaunchScreen.storyboard in Resources */,
+				759A7ED92421B5E100DAB43A /* Assets.xcassets in Resources */,
+				759A7ED72421B5E000DAB43A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		759A7EC82421B5E000DAB43A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751F0E8324233E57005730D1 /* GlobalStates.swift in Sources */,
+				75A4842424399CC300D837B3 /* ScaleViewController.swift in Sources */,
+				751F0E7F2422AEC2005730D1 /* KeystoreViewController.swift in Sources */,
+				758A9EB524220A1900C05E64 /* HinaViewController.swift in Sources */,
+				759A7ED02421B5E000DAB43A /* AppDelegate.swift in Sources */,
+				759C50FC242409F300E7CB95 /* crypto.cpp in Sources */,
+				75C057C42423F64200C1FE8D /* HinaWrapper.swift in Sources */,
+				75A484222439947A00D837B3 /* ScaleImage.swift in Sources */,
+				759C50FD242409F300E7CB95 /* hina_impl.cpp in Sources */,
+				759A7ED22421B5E000DAB43A /* SceneDelegate.swift in Sources */,
+				754BBAD2242344960036DD75 /* SelectKeyViewController.swift in Sources */,
+				751F0E812422C4BC005730D1 /* Keystore.swift in Sources */,
+				759C510324243B1100E7CB95 /* FixOrientation.swift in Sources */,
+				759C50FA242409F300E7CB95 /* slice2d.cpp in Sources */,
+				759C50FE242409F300E7CB95 /* hina.cpp in Sources */,
+				75C057C22423EFF600C1FE8D /* PreviewViewController.swift in Sources */,
+				759C50FB242409F300E7CB95 /* prng.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		759A7ED52421B5E000DAB43A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				759A7ED62421B5E000DAB43A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		759A7EDA2421B5E100DAB43A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				759A7EDB2421B5E100DAB43A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		759A7EDE2421B5E100DAB43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		759A7EDF2421B5E100DAB43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		759A7EE12421B5E100DAB43A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4J2U2PDH6A;
+				INFOPLIST_FILE = Hina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hina/libsodium/lib",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.XCF-Babble.Hina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hina/Hina-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		759A7EE22421B5E100DAB43A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4J2U2PDH6A;
+				INFOPLIST_FILE = Hina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Hina/libsodium/lib",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.XCF-Babble.Hina";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hina/Hina-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		759A7EC72421B5E000DAB43A /* Build configuration list for PBXProject "Hina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759A7EDE2421B5E100DAB43A /* Debug */,
+				759A7EDF2421B5E100DAB43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		759A7EE02421B5E100DAB43A /* Build configuration list for PBXNativeTarget "Hina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				759A7EE12421B5E100DAB43A /* Debug */,
+				759A7EE22421B5E100DAB43A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 759A7EC42421B5E000DAB43A /* Project object */;
+}

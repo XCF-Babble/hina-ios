@@ -1,0 +1,3 @@
+[submodule "Hina/libhina"]
+	path = Hina/libhina
+	url = https://github.com/XCF-Babble/hina
