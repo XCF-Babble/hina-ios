@@ -91,13 +91,13 @@ func toGrayscaleImage(_ data: CFData, width: Int, height: Int) -> CGImage? {
     return CGImage.init(width: width, height: height, bitsPerComponent: 8, bitsPerPixel: 8, bytesPerRow: width, space: CGColorSpaceCreateDeviceGray(), bitmapInfo: CGBitmapInfo(), provider: provider, decode: nil, shouldInterpolate: false, intent: .defaultIntent)
 }
 
-func hinaWrapper(image: UIImage, password: String, decrypt: Bool) -> UIImage? {
+func hinaWrapper(image: UIImage, password: String, blockSize: Int, decrypt: Bool) -> UIImage? {
     guard let ciImage = CIImage(image: image) else { return nil }
     guard let cgImage = CIContext().createCGImage(ciImage, from: ciImage.extent) else { return nil }
     guard let inData = decrypt ? toGrayscaleData(cgImage) : toRGBData(cgImage) else { return nil }
     let cOutHeight = UnsafeMutablePointer<Int>.allocate(capacity: 1)
     let cOutWidth = UnsafeMutablePointer<Int>.allocate(capacity: 1)
-    let cOut = hina(cOutHeight, cOutWidth, CFDataGetBytePtr(inData), cgImage.height, cgImage.width, password, decrypt ? 1 : 0)
+    let cOut = hina(cOutHeight, cOutWidth, CFDataGetBytePtr(inData), cgImage.height, cgImage.width, password, blockSize, decrypt ? 1 : 0)
     let outHeight = cOutHeight.pointee
     let outWidth = cOutWidth.pointee
     cOutWidth.deallocate()

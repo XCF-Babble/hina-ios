@@ -32,4 +32,5 @@ import UIKit
 
 var globalImage: UIImage? = nil
 var globalPassword = ""
+var globalBlockSize = 8
 var globalDecrypting = false

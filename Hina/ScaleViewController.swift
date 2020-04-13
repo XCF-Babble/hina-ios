@@ -33,6 +33,7 @@ import UIKit
 class ScaleViewController: UITableViewController {
     @IBOutlet var widthTextField: UITextField!
     @IBOutlet var heightTextField: UITextField!
+    @IBOutlet var blockSizeTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,12 +46,15 @@ class ScaleViewController: UITableViewController {
     @objc func nextButtonClicked() {
         let width = Int(widthTextField.text!)
         let height = Int(heightTextField.text!)
-        guard width != nil && height != nil else {
+        let blockSize = Int(blockSizeTextField.text!)
+        guard width != nil && height != nil && blockSize != nil &&
+            width! > 0 && height! > 0 && blockSize! > 0 else {
             let alert = UIAlertController(title: "Error", message: "Please enter a valid size.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
             return
         }
+        globalBlockSize = blockSize!
         DispatchQueue.global(qos: .userInitiated).async {
             globalImage = globalImage?.scale(CGSize(width: width!, height: height!))
             DispatchQueue.main.async {

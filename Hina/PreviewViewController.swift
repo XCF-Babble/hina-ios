@@ -57,7 +57,7 @@ class PreviewViewController: UIViewController, UIScrollViewDelegate {
         indicator.startAnimating()
 
         DispatchQueue.global(qos: .userInitiated).async {
-            let image = hinaWrapper(image: globalImage!, password: globalPassword, decrypt: globalDecrypting)
+            let image = hinaWrapper(image: globalImage!, password: globalPassword, blockSize: globalBlockSize, decrypt: globalDecrypting)
             DispatchQueue.main.async {
                 guard image != nil else {
                     let alert = UIAlertController(title: "Error", message: "An unexpected error has occurred.", preferredStyle: .alert)
