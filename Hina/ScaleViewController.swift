@@ -55,6 +55,8 @@ class ScaleViewController: UITableViewController {
             return
         }
         globalBlockSize = blockSize!
+        navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.rightBarButtonItem!.isEnabled = false
         DispatchQueue.global(qos: .userInitiated).async {
             globalImage = globalImage?.scale(CGSize(width: width!, height: height!))
             DispatchQueue.main.async {
